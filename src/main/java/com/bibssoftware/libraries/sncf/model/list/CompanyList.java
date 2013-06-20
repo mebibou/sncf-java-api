@@ -8,6 +8,11 @@ import javax.xml.bind.annotation.XmlElement;
 
 import com.bibssoftware.libraries.sncf.model.Company;
 
+/**
+ * 
+ * @author bibssoftware
+ *
+ */
 public class CompanyList {
 
   @XmlAttribute(name="CompanyCount")

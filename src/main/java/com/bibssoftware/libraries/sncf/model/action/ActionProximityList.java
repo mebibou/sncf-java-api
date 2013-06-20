@@ -5,6 +5,11 @@ import javax.xml.bind.annotation.XmlRootElement;
 
 import com.bibssoftware.libraries.sncf.model.list.ProximityList;
 
+/**
+ * 
+ * @author bibssoftware
+ *
+ */
 @XmlRootElement(name="ActionProximityList")
 public class ActionProximityList extends Action {
   

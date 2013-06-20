@@ -19,6 +19,8 @@ public class StopPoint {
   @XmlAttribute(name="StopPointExternalCode", required=true)
   public String externalCode;
   
+  @XmlElement(name="StopPointAddress")
+  public StopPointAddress address;
   @XmlElement(name="Mode")
   public Mode mode;
   @XmlElement(name="City")

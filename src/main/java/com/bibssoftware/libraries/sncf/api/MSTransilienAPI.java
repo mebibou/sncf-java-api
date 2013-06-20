@@ -5,7 +5,11 @@ import java.util.Map;
 import com.bibssoftware.libraries.sncf.model.action.Action;
 import com.bibssoftware.libraries.sncf.model.action.ActionParam;
 
-
+/**
+ * 
+ * @author bibssoftware
+ *
+ */
 public class MSTransilienAPI extends BaseAPI {
   
   private static String API_URL = "http://ms.api.transilien.com/";

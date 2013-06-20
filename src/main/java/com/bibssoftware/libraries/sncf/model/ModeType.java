@@ -6,7 +6,7 @@ import javax.xml.bind.annotation.XmlAttribute;
  * Mode générique de transport (normalisé TRIDENT). Exemples : bus, train, rapidTransit… 
  * <ModeType ModeTypeIdx="0" ModeTypeExternalCode="" ModeTypeName="" />
  * 
- * @author groyer
+ * @author bibssoftware
  *
  */
 public class ModeType {

@@ -5,8 +5,9 @@ import javax.xml.bind.annotation.XmlElement;
 
 /**
  * <Stop StopIdx="508972" StopPointIdx="8662" VehicleJourneyIdx="235698" HourNumber="0" MinuteNumber="0" DestinationPos="-1" ODTIdx="0" ODTPos="-1" ValidityPatternSetCommentPos="0"
-          StopOrder="0" VehicleIdx="0">
- * @author groyer
+ *         StopOrder="0" VehicleIdx="0">
+ *
+ * @author bibssoftware
  *
  */
 public class Stop {

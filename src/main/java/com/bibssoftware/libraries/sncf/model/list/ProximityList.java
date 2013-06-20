@@ -8,6 +8,11 @@ import javax.xml.bind.annotation.XmlElement;
 
 import com.bibssoftware.libraries.sncf.model.Proximity;
 
+/**
+ * 
+ * @author bibssoftware
+ *
+ */
 public class ProximityList {
 
   @XmlAttribute(name="ProximityCount")

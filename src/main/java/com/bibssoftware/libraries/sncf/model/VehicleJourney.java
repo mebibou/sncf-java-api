@@ -3,7 +3,7 @@ package com.bibssoftware.libraries.sncf.model;
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
 
-import com.bibssoftware.libraries.sncf.model.list.StopList;
+import com.bibssoftware.libraries.sncf.model.list.StopPointList;
 
 /**
  * <VehicleJourney VehicleJourneyIdx="235698" VehicleJourneyId="830461" VehicleJourneyName="830461" VehicleJourneyRouteIdx="6901" VehicleJourneyExternalCode="830461" IsAdapted="0">
@@ -33,5 +33,5 @@ public class VehicleJourney {
   @XmlElement(name="Vehicle")
   public Vehicle vehicle;
   @XmlElement(name="StopList")
-  public StopList stopList;
+  public StopPointList stopList;
 }

@@ -6,7 +6,7 @@ import javax.xml.bind.annotation.XmlAttribute;
  * Marque commerciale, réseau de transport. Exemple : réseau Paris Saint-Lazare, réseau RER E
  * <Network NetworkIdx="131" NetworkId="658" NetworkName="STIVO" NetworkExternalCode="440"></Network>
  * 
- * @author groyer
+ * @author bibssoftware
  *
  */
 public class Network {

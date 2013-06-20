@@ -14,7 +14,8 @@ public abstract class Action {
   
   public static enum Params implements ActionParam {
     NetworkExternalCode, ModeTypeExternalCode, ModeExternalCode, LineExternalCode, RouteExternalCode, 
-    VehicleJourneyExternalCode, StopAreaExternalCode, StopPointExternalCode
+    VehicleJourneyExternalCode, StopAreaExternalCode, StopPointExternalCode, RoutePointExternalCode,
+    CityExternalCode, CompanyExternalCode, LineCode
   }
 
   @XmlElement(name="PagerInfo")

@@ -2,6 +2,11 @@ package com.bibssoftware.libraries.sncf.api;
 
 import com.bibssoftware.libraries.sncf.model.*;
 
+/**
+ * 
+ * @author bibssoftware
+ *
+ */
 public class TransilienAPI extends BaseAPI {
 
   private static String API_URL = "http://api.transilien.com/";

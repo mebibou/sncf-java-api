@@ -5,6 +5,11 @@ import javax.xml.bind.annotation.XmlRootElement;
 
 import com.bibssoftware.libraries.sncf.model.list.RouteList;
 
+/**
+ * 
+ * @author bibssoftware
+ *
+ */
 @XmlRootElement(name="ActionRouteList")
 public class ActionRouteList extends Action {
   

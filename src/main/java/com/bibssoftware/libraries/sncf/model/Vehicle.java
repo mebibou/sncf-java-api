@@ -5,7 +5,7 @@ import javax.xml.bind.annotation.XmlAttribute;
 /**
  * <Vehicle VehicleIdx="0" VehicleId="-1" VehicleName="" VehicleExternalCode="" MIPAccess="False" BikeAccepted="False" AirConditioned="False" />
  * 
- * @author groyer
+ * @author bibssoftware
  *
  */
 public class Vehicle {

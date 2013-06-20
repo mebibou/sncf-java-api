@@ -6,7 +6,7 @@ import javax.xml.bind.annotation.XmlAttribute;
  * Transporteur. SNCF
  * <Company CompanyIdx="25" CompanyId="448" CompanyName="STIVO" CompanyExternalCode="059" />
  * 
- * @author groyer
+ * @author bibssoftware
  *
  */
 public class Company {

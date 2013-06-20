@@ -10,7 +10,7 @@ import javax.xml.bind.annotation.XmlElement;
  *           <Minute>17</Minute>
  *         </StopTime>
  *
- * @author groyer
+ * @author bibssoftware
  *
  */
 public class StopTime {

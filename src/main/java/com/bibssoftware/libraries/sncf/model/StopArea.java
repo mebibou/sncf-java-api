@@ -7,7 +7,7 @@ import javax.xml.bind.annotation.XmlElement;
  * <StopArea StopAreaIdx="4124" StopAreaId="9417" StopAreaName="Les Croizettes" StopAreaExternalCode="NAV&#124;575322&#124;2449799" MainStopArea="0" MultiModal="0" CarPark="0"
  *             MainConnection="0" AdditionalData="" ResaRailCode="">
  *             
- * @author groyer
+ * @author bibssoftware
  *
  */
 public class StopArea {

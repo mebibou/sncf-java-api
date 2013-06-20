@@ -8,6 +8,11 @@ import javax.xml.bind.annotation.XmlElement;
 
 import com.bibssoftware.libraries.sncf.model.Route;
 
+/**
+ * 
+ * @author bibssoftware
+ *
+ */
 public class RouteList {
 
   @XmlAttribute(name="RouteCount")

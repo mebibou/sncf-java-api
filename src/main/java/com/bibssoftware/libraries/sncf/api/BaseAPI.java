@@ -19,6 +19,11 @@ import org.apache.http.impl.client.DefaultHttpClient;
 
 import com.bibssoftware.libraries.sncf.utils.SNCFProperties;
 
+/**
+ * 
+ * @author bibssoftware
+ *
+ */
 public class BaseAPI {
 
   private String login;

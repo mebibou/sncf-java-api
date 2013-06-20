@@ -2,6 +2,11 @@ package com.bibssoftware.libraries.sncf.model;
 
 import javax.xml.bind.annotation.XmlAttribute;
 
+/**
+ * 
+ * @author bibssoftware
+ *
+ */
 public class Country {
   
   @XmlAttribute(name="CountryIdx", required=true)

@@ -6,7 +6,7 @@ import javax.xml.bind.annotation.XmlElement;
 /**
  * <City CityIdx="362" CityId="36434" CityName="Courdimanche" CityExternalCode="95183" CityCode="95183" />
  * 
- * @author groyer
+ * @author bibssoftware
  *
  */
 public class City {

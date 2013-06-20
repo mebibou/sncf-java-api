@@ -1,6 +1,10 @@
 package com.bibssoftware.libraries.sncf.model;
 
-
+/**
+ * 
+ * @author bibssoftware
+ *
+ */
 public class Gare {
   
   public Long id;

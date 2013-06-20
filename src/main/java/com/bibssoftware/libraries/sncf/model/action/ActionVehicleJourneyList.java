@@ -5,6 +5,11 @@ import javax.xml.bind.annotation.XmlRootElement;
 
 import com.bibssoftware.libraries.sncf.model.list.VehicleJourneyList;
 
+/**
+ * 
+ * @author bibssoftware
+ *
+ */
 @XmlRootElement(name="ActionVehicleJourneyList")
 public class ActionVehicleJourneyList extends Action {
   

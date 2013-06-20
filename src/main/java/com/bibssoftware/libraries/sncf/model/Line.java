@@ -19,7 +19,8 @@ import javax.xml.bind.annotation.XmlElement;
  *  <Backward BackwardName="Ligne 36">
  *  </Backward>
  * </Line>
- * @author groyer
+ * 
+ * @author bibssoftware
  *
  */
 public class Line {

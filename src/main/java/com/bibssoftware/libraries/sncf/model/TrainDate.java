@@ -8,6 +8,11 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 import com.bibssoftware.libraries.sncf.utils.DateAdapter;
 
+/**
+ * 
+ * @author bibssoftware
+ *
+ */
 public class TrainDate {
   
   public static enum TrainDateMode {

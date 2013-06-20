@@ -8,6 +8,11 @@ import javax.xml.bind.annotation.XmlElement;
 
 import com.bibssoftware.libraries.sncf.model.VehicleJourney;
 
+/**
+ * 
+ * @author bibssoftware
+ *
+ */
 public class VehicleJourneyList {
 
   @XmlAttribute(name="VehicleJourneyCount")

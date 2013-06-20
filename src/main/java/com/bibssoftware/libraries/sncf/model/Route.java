@@ -6,7 +6,7 @@ import javax.xml.bind.annotation.XmlElement;
 /**
  * <Route RouteIdx="6901" RouteId="62978" RouteName="Ligne 36" RouteExternalCode="0594400360001" IsForward="0" RouteLineIdx="1188" IsFrequence="0" IsAdapted="0">
  * 
- * @author groyer
+ * @author bibssoftware
  *
  */
 public class Route {

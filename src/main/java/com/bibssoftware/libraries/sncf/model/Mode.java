@@ -5,7 +5,7 @@ import javax.xml.bind.annotation.XmlAttribute;
 /**
  * <Mode ModeIdx="10" ModeId="2" ModeName="BUS" ModeExternalCode="RATP" ModeTypeExternalCode="" />
  * 
- * @author groyer
+ * @author bibssoftware
  *
  */
 public class Mode {
