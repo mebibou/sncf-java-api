@@ -13,10 +13,10 @@ public class ActionRouteList extends Action {
   }
   
   @XmlElement(name="RouteList")
-  private RouteList routeList;
+  private RouteList list;
   
   @Override
   public RouteList getList() {
-    return this.routeList;
+    return this.list;
   }
 }

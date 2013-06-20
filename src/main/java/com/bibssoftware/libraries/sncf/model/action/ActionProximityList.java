@@ -13,10 +13,10 @@ public class ActionProximityList extends Action {
   }
   
   @XmlElement(name="ProximityList")
-  private ProximityList proximityList;
+  private ProximityList list;
   
   @Override
   public ProximityList getList() {
-    return this.proximityList;
+    return this.list;
   }
 }

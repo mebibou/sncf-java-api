@@ -3,20 +3,20 @@ package com.bibssoftware.libraries.sncf.model.action;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
-import com.bibssoftware.libraries.sncf.model.list.VehicleJourneyList;
+import com.bibssoftware.libraries.sncf.model.list.CompanyList;
 
-@XmlRootElement(name="ActionVehicleJourneyList")
-public class ActionVehicleJourneyList extends Action {
+@XmlRootElement(name="ActionCompanyList")
+public class ActionCompanyList extends Action {
   
   public static enum Params implements ActionParam {
     ShowStop, VehicleJourneyIdx, VehicleJourneyExternalCode
   }
   
-  @XmlElement(name="VehicleJourneyList")
-  private VehicleJourneyList list;
+  @XmlElement(name="CompanyList")
+  private CompanyList list;
   
   @Override
-  public VehicleJourneyList getList() {
+  public CompanyList getList() {
     return this.list;
   }
 }
