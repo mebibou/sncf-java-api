@@ -1,5 +1,10 @@
 package com.bibssoftware.libraries.sncf.api;
 
+import java.util.Map;
+
+import com.bibssoftware.libraries.sncf.model.action.Action;
+import com.bibssoftware.libraries.sncf.model.action.ActionParam;
+
 
 public class MSTransilienAPI extends BaseAPI {
   
@@ -8,12 +13,13 @@ public class MSTransilienAPI extends BaseAPI {
   public MSTransilienAPI() {
     super(API_URL);
   }
-
-  public MSTransilienAPI(Class<?> action) {
-    super(API_URL+"?action="+action.getSimpleName());
+  
+  public <T extends Action> T list(Map<ActionParam, Object> params, Class<T> type) {
+    String url = "?action="+type.getSimpleName().replaceAll("Action", "") + Action.addParams(params);
+    return this.doGet(url, type);
   }
   
-  public <T> T execute(String url, Class<T> type) {
+  protected <T> T execute(String url, Class<T> type) {
     return this.doGet(url, type);
   }
 

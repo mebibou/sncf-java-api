@@ -5,6 +5,10 @@ import java.net.URLEncoder;
 import java.util.Map;
 import java.util.Map.Entry;
 
+import javax.xml.bind.annotation.XmlElement;
+
+import com.bibssoftware.libraries.sncf.model.lib.PagerInfo;
+
 
 public abstract class Action {
   
@@ -12,38 +16,35 @@ public abstract class Action {
     NetworkExternalCode, ModeTypeExternalCode, ModeExternalCode, LineExternalCode, RouteExternalCode, 
     VehicleJourneyExternalCode, StopAreaExternalCode, StopPointExternalCode
   }
+
+  @XmlElement(name="PagerInfo")
+  protected PagerInfo pagerInfo;
   
-  protected String url;
-  
-  public Action() {
-    this.url = "";
+  public PagerInfo getPagerInfo() {
+    return this.pagerInfo;
   }
   
-  public String getUrl(Map<ActionParam, Object> params) {
-    return this.addParams(this.url, params);
-  }
+  public abstract Object getList();
   
-  public abstract Object execute(Map<ActionParam, Object> params);
-  
-  protected String addParams(String url, Map<ActionParam, Object> params) {
+  public static String addParams(Map<ActionParam, Object> params) {
+    String url = "";
     if(params!=null) {
       for(Entry<ActionParam, Object> entry: params.entrySet()) {
         String name = entry.getKey().name();
         String value = entry.getValue().toString();
-        url = this.addParam(url, name, value);
+        url += Action.addParam(name, value);
       }
     }
     return url;
   }
   
-  protected String addParam(String url, String param_name, String param_value) {
+  protected static String addParam(String param_name, String param_value) {
     try {
-      url += "&"+param_name+"="+URLEncoder.encode(param_value, "UTF-8");
+      return "&"+param_name+"="+URLEncoder.encode(param_value, "UTF-8");
     } catch (UnsupportedEncodingException e) {
       // could not encode? simply add value
-      url += "&"+param_name+"="+param_value;
+      return "&"+param_name+"="+param_value;
     }
-    return url;
   }
   
 }
