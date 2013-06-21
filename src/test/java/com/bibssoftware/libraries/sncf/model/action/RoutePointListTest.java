@@ -23,53 +23,53 @@ public class RoutePointListTest {
   }
   
   @Test
-  public void testRoutePointByRoutePointIdx() {
+  public void testRoutePointByRoutePointExternalCode() {
     MSTransilienAPI api = new MSTransilienAPI();
     
-    Integer idx = 159713;
+    String code = "DUA8108014001013:DUA8775820";
     
     Map<ActionParam, Object> params = new HashMap<ActionParam, Object>();
-    params.put(ActionRoutePointList.Params.RoutePointIdx, idx);
+    params.put(Action.Params.RoutePointExternalCode, code);
     
     ActionRoutePointList action = api.list(params, ActionRoutePointList.class);
     RoutePointList list = action.getList();
     assertTrue(list.count==1);
     for(RoutePoint point:list.routePoints) {
-      assertTrue(point.idx.equals(idx));
+      assertTrue(point.externalCode.equals(code));
     }
   }
   
   @Test
-  public void testRoutePointByStopPointIdx() {
+  public void testRoutePointByStopPointExternalCode() {
     MSTransilienAPI api = new MSTransilienAPI();
     
-    Integer idx = 33464;
+    String code = "DUA8775820";
     
     Map<ActionParam, Object> params = new HashMap<ActionParam, Object>();
-    params.put(ActionRoutePointList.Params.StopPointIdx, idx);
+    params.put(Action.Params.StopPointExternalCode, code);
     
     ActionRoutePointList action = api.list(params, ActionRoutePointList.class);
     RoutePointList list = action.getList();
     assertTrue(list.count==4);
     for(RoutePoint point:list.routePoints) {
-      assertTrue(point.stopPoint.idx.equals(idx));
+      assertTrue(point.stopPoint.externalCode.equals(code));
     }
   }
   
   @Test
-  public void testRoutePointByStopAreaIdx() {
+  public void testRoutePointByStopAreaExternalCode() {
     MSTransilienAPI api = new MSTransilienAPI();
     
-    Integer idx = 14430;
+    String code = "DUA8775820";
     
     Map<ActionParam, Object> params = new HashMap<ActionParam, Object>();
-    params.put(ActionRoutePointList.Params.StopAreaIdx, idx);
+    params.put(Action.Params.StopAreaExternalCode, code);
     
     ActionRoutePointList action = api.list(params, ActionRoutePointList.class);
     RoutePointList list = action.getList();
     assertTrue(list.count==4);
     for(RoutePoint point:list.routePoints) {
-      assertTrue(point.stopPoint.stopArea.idx.equals(idx));
+      assertTrue(point.stopPoint.stopArea.externalCode.equals(code));
     }
   }
 }

@@ -14,8 +14,7 @@ import com.bibssoftware.libraries.sncf.model.list.RoutePointList;
 public class ActionRoutePointList extends Action {
   
   public static enum Params implements ActionParam {
-    RoutePointIdx, RoutePointExternalCode, Sens,
-    RouteIdx, StopPointIdx, StopAreaIdx
+    Sens
   }
   
   @XmlElement(name="RoutePointList")
