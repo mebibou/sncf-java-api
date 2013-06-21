@@ -14,7 +14,7 @@ import com.bibssoftware.libraries.sncf.model.list.VehicleJourneyList;
 public class ActionVehicleJourneyList extends Action {
   
   public static enum Params implements ActionParam {
-    ShowStop, VehicleJourneyIdx, VehicleJourneyExternalCode
+    VehicleJourneyName, ShowStop, Date, EndDate, StartTime, EndTime
   }
   
   @XmlElement(name="VehicleJourneyList")

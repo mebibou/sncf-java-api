@@ -13,10 +13,6 @@ import com.bibssoftware.libraries.sncf.model.list.CompanyList;
 @XmlRootElement(name="ActionCompanyList")
 public class ActionCompanyList extends Action {
   
-  public static enum Params implements ActionParam {
-    CompanyIdx, CompanyExternalCode
-  }
-  
   @XmlElement(name="CompanyList")
   private CompanyList list;
   

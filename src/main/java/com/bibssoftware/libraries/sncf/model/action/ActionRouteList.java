@@ -14,7 +14,7 @@ import com.bibssoftware.libraries.sncf.model.list.RouteList;
 public class ActionRouteList extends Action {
   
   public static enum Params implements ActionParam {
-    RouteIdx, Sens, CheckOrder
+    Sens, CheckOrder
   }
   
   @XmlElement(name="RouteList")

@@ -13,10 +13,6 @@ import com.bibssoftware.libraries.sncf.model.list.NetworkList;
 @XmlRootElement(name="ActionNetworkList")
 public class ActionNetworkList extends Action {
   
-  public static enum Params implements ActionParam {
-    NetworkIdx, NetworkExternalCode
-  }
-  
   @XmlElement(name="NetworkList")
   private NetworkList list;
   
