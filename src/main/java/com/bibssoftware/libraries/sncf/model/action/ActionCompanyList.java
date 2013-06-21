@@ -14,7 +14,7 @@ import com.bibssoftware.libraries.sncf.model.list.CompanyList;
 public class ActionCompanyList extends Action {
   
   public static enum Params implements ActionParam {
-    ShowStop, VehicleJourneyIdx, VehicleJourneyExternalCode
+    CompanyIdx, CompanyExternalCode
   }
   
   @XmlElement(name="CompanyList")
