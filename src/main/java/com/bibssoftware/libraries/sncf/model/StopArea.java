@@ -3,6 +3,8 @@ package com.bibssoftware.libraries.sncf.model;
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
 
+import com.bibssoftware.libraries.sncf.model.list.ModeList;
+
 /**
  * <StopArea StopAreaIdx="4124" StopAreaId="9417" StopAreaName="Les Croizettes" StopAreaExternalCode="NAV&#124;575322&#124;2449799" MainStopArea="0" MultiModal="0" CarPark="0"
  *             MainConnection="0" AdditionalData="" ResaRailCode="">
@@ -27,6 +29,10 @@ public class StopArea {
   @XmlAttribute(name="ResaRailCode")
   public String resaRailCode;
   
+  @XmlElement(name="City")
+  public City city;
   @XmlElement(name="Coord")
   public Coordinates coordinates;
+  @XmlElement(name="ModeList")
+  public ModeList modeList;
 }

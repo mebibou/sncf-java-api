@@ -12,7 +12,7 @@ import javax.xml.bind.annotation.XmlAttribute;
 public class ModeType {
   
   public static enum Values {
-    RapidTransit, Bus, Tramway
+    RapidTransit, Bus, Tramway, Metro
   }
 
   @XmlAttribute(name="ModeTypeIdx", required=true)
