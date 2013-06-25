@@ -10,10 +10,14 @@ import javax.xml.bind.annotation.XmlAttribute;
  *
  */
 public class ModeType {
+  
+  public static enum Values {
+    RapidTransit, Bus, Tramway
+  }
 
   @XmlAttribute(name="ModeTypeIdx", required=true)
   public Integer idx;
-  @XmlAttribute(name="ModeTypeExternalCode, required=true")
+  @XmlAttribute(name="ModeTypeExternalCode", required=true)
   public String externalCode;
   @XmlAttribute(name="ModeTypeName", required=true)
   public String name;
