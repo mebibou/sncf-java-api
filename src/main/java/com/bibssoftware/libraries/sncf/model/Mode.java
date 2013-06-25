@@ -18,5 +18,7 @@ public class Mode {
   public String name;
   @XmlAttribute(name="ModeExternalCode", required=true)
   public String externalCode;
+  @XmlAttribute(name="ModeTypeExternalCode", required=true)
+  public String modeTypeExternalCode;
 
 }
