@@ -3,7 +3,7 @@
 
   <groupId>com.bibssoftware.libraries.sncf</groupId>
   <artifactId>sncf-java-api</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>1.0</version>
   <packaging>jar</packaging>
 
   <name>sncf-java-api</name>
