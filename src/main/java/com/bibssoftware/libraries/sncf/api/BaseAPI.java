@@ -20,7 +20,7 @@ import org.apache.http.impl.client.DefaultHttpClient;
 import com.bibssoftware.libraries.sncf.utils.SNCFProperties;
 
 /**
- * 
+ *
  * @author bibssoftware
  *
  */
@@ -40,6 +40,7 @@ public class BaseAPI {
 
   protected <T> T doGet(String url, Class<T> type) {
     String result = executeGet(this.api_url + url);
+    //System.out.println(result);
     try {
       this.jContext = JAXBContext.newInstance(type);
       Unmarshaller unmarshaller = jContext.createUnmarshaller();
