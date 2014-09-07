@@ -1,6 +1,8 @@
 sncf-java-api
 =============
 
+[![Build Status](https://travis-ci.org/mebibou/sncf-java-api.png)](https://travis-ci.org/mebibou/sncf-java-api)
+
 Java Wrapper for the sncf open data APIs. see http://test.data-sncf.com/
 
 ##How to build it
